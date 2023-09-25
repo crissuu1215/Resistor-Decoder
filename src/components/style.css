@@ -1,0 +1,125 @@
+.l1 {
+  /* background-color: #f8f8f8; */
+  position: relative;
+  display: block;
+  overflow: hidden;
+  height: 350px;
+
+  & .output {
+    margin: auto;
+    /* position: relative; */
+    display: block;
+    font-size: 80px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    text-align: center;
+    transition: visibility 1s;
+    /* transform: translateX(-50%); */
+  }
+}
+
+.l1_text_norm {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  /* font-size: 30px; */
+}
+
+.l1_text_bold {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 80px;
+}
+
+.resistorDIV {
+  height: 250px;
+  position: relative;
+  & .resistor {
+    display: block;
+    position: relative;
+    height: 250px;
+    /* width: 30vw; */
+    padding: 20px;
+    margin: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    /* transition: fill 2s; */
+
+    & .resistor_gradient {
+      fill: url(#linear-gradient-shadow);
+    }
+
+    & .resistor_color {
+      fill: #e8da93;
+    }
+    & .resTrans {
+      transition: fill 0.6s;
+    }
+    & .colorBtnMet {
+      fill: url(#linear-gradient-gold);
+      stroke-width: 0px;
+    }
+  }
+
+  & .wire_tin {
+    position: absolute;
+    /* display: block; */
+    margin: auto;
+    width: 100vw;
+    height: 20px;
+
+    top: 50%;
+    transform: translateY(-50%);
+    & .wire-grad {
+      fill: url(#linear-gradient-wire);
+    }
+  }
+}
+
+.l2 {
+  position: relative;
+  display: block;
+  width: 100vw;
+  height: auto;
+
+  & .interface {
+    /* position: inherit; */
+    display: flex;
+    flex-direction: row;
+    border: solid 1px rgb(206, 206, 206);
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: auto;
+    width: 500px;
+    /* transform: translateX(-50%); */
+    /* left: 50%; */
+    height: auto;
+
+    & .colBtn {
+      display: flex;
+      flex-direction: column;
+      height: auto;
+      margin: auto;
+
+      & .colorBtn {
+        border-radius: 6px;
+        border: solid 0px;
+        padding: auto;
+        margin: 5px;
+        height: 30px;
+        width: 60px;
+      }
+    }
+  }
+}
+.main {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background-color: #f8f8f8 !important;
+
+  /* min-width: 1000px; */
+  /* width: 100vw; */
+}
